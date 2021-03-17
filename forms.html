@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://crm-synapcom.github.io/crm-forms-synapcom-teste-front/scripts/forms-synapcom-teste.js"></script>
+        <!-- <script src="scripts/forms-synapcom-teste.js"></script> -->
+    </head>
+<body>
+        
+    <body>
+        <form id="contact-form" method="post" novalidate>
+            <div>
+                <input type="text" id="contact_firstname" class="invalid" name="firstname" placeholder="Nome">
+            </div>
+            
+            <!-- <div>
+                <input type="text" id="contact_lastname" class="valid" name="lastname" placeholder="Sobrenome">
+            </div> -->
+            
+            <div>
+                <input type="text" id="contact_email" class="invalid" name="email" placeholder="E-mail">
+            </div>
+            <div>
+                <input type="radio" id="contact_female" name="gender_radio" value='Feminino'>
+                <label style="position: relative;" for="contact_female">Feminino</label>
+                <input type="radio" id="contact_male" name="gender_radio" value='Masculino'>
+                <label style="position: relative;" for="contact_male">Masculino</label>
+            </div>
+            <div>
+                <input type="checkbox" id="contact_email_checker" name="email_checker">
+                <label  for="contact_email_checker" class="checker-radio_label">Quero receber ofertas por e email</label>
+            </div>
+            <div>
+                <input type="checkbox" id="contact_sms_checker" name="sms_checker">
+                <label  for="contact_sms_checker" class="checker-radio_label">Quero receber ofertas por SMS</label>
+            </div>
+            <div id="phone_block" style="display: none;">
+                <input type="text"  class="input invalid" id="contact_phone" name="phone" placeholder="Celular com DDD" disabled> <br>
+            </div>
+            
+            <div > 
+                <input type="checkbox" id="contact_privacy_policy_checker" name="privacy_policy_checker">
+                <label for="contact_privacy_policy_checker" class="checker-radio_label">Li e concordo com a <a href="https://www.mash.com.br/institucional/politica-de-privacidade" target="_blank">política de privacidade</a></label>
+            </div>
+
+            <div>
+                <input type="button" id="contact_submit" value="Cadastrar">
+            </div>
+        </form>
+    </body>
+</html>
